@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "microsoft-learn": {
+      "type": "http",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "serena": {
+      "type": "stdio",
+      "command": "uvx",
+      "args": [
+        "-p",
+        "3.13",
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--project",
+        "."
+      ]
+    },
+    "codebase-memory-mcp": {
+      "type": "stdio",
+      "command": "codebase-memory-mcp"
+    }
+  }
+}

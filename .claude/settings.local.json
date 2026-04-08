@@ -1,0 +1,8 @@
+{
+  "enabledMcpjsonServers": [
+    "microsoft-learn",
+    "context7",
+    "serena",
+    "codebase-memory-mcp"
+  ]
+}

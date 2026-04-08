@@ -7,5 +7,41 @@
         "edit": "deny"
       }
     }
+  },
+  "formatter": {
+    "dotnet-format": {
+      "command": ["dotnet", "format", "$FILE"],
+      "extensions": [".cs"]
+    }
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "microsoft-learn": {
+      "type": "remote",
+      "url": "https://learn.microsoft.com/api/mcp"
+    },
+    "serena": {
+      "type": "local",
+      "command": [
+        "uvx",
+        "-p",
+        "3.13",
+        "--from",
+        "git+https://github.com/oraios/serena",
+        "serena",
+        "start-mcp-server",
+        "--project",
+        "."
+      ]
+    },
+    "codebase-memory-mcp": {
+      "type": "local",
+      "command": [
+        "codebase-memory-mcp"
+      ]
+    }
   }
 }
